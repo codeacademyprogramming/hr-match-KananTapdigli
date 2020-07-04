@@ -1,6 +1,6 @@
 ﻿namespace HrMatchApp.Forms
 {
-    partial class Form13
+    partial class SuitableAnnouncementsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.listView = new System.Windows.Forms.ListView();
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -39,12 +41,23 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.appliedAnnouncements = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(246, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(320, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "SUITABLE ANNOUNCEMENTS";
             // 
             // listView
             // 
             this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader11,
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
@@ -57,12 +70,18 @@
             this.columnHeader10});
             this.listView.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView.HideSelection = false;
-            this.listView.Location = new System.Drawing.Point(-1, 35);
+            this.listView.Location = new System.Drawing.Point(0, 42);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(800, 416);
-            this.listView.TabIndex = 11;
+            this.listView.Size = new System.Drawing.Size(800, 408);
+            this.listView.TabIndex = 9;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
+            this.listView.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView_MouseClick);
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "APPLY";
+            this.columnHeader11.Width = 131;
             // 
             // columnHeader1
             // 
@@ -112,30 +131,19 @@
             this.columnHeader10.Text = "Tel Number";
             this.columnHeader10.Width = 150;
             // 
-            // appliedAnnouncements
-            // 
-            this.appliedAnnouncements.AutoSize = true;
-            this.appliedAnnouncements.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.appliedAnnouncements.ForeColor = System.Drawing.SystemColors.Window;
-            this.appliedAnnouncements.Location = new System.Drawing.Point(261, 9);
-            this.appliedAnnouncements.Name = "appliedAnnouncements";
-            this.appliedAnnouncements.Size = new System.Drawing.Size(308, 23);
-            this.appliedAnnouncements.TabIndex = 10;
-            this.appliedAnnouncements.Text = "APPLIED ANNOUNCEMENTS";
-            // 
-            // Form13
+            // Form12
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.listView);
-            this.Controls.Add(this.appliedAnnouncements);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "Form13";
+            this.Name = "Form12";
             this.ShowIcon = false;
-            this.Text = "APPLIED ANNOUNCEMENTS";
-            this.Load += new System.EventHandler(this.Form13_Load);
+            this.Text = "SUITABLE ANNOUNCEMENTS";
+            this.Load += new System.EventHandler(this.Form12_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,7 +151,9 @@
 
         #endregion
 
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView listView;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
@@ -154,6 +164,5 @@
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.ColumnHeader columnHeader10;
-        private System.Windows.Forms.Label appliedAnnouncements;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace HrMatchApp.Forms
 {
-    partial class Form10
+    partial class AllAnnouncements
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox = new System.Windows.Forms.TextBox();
-            this.choosingName = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.combobox = new System.Windows.Forms.ComboBox();
             this.listView = new System.Windows.Forms.ListView();
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -44,60 +40,8 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.searchFor = new System.Windows.Forms.ComboBox();
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(695, 58);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 28);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "SEARCH";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox
-            // 
-            this.textBox.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox.Location = new System.Drawing.Point(123, 56);
-            this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(553, 30);
-            this.textBox.TabIndex = 12;
-            this.textBox.Visible = false;
-            // 
-            // choosingName
-            // 
-            this.choosingName.AutoSize = true;
-            this.choosingName.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.choosingName.ForeColor = System.Drawing.SystemColors.Window;
-            this.choosingName.Location = new System.Drawing.Point(12, 60);
-            this.choosingName.Name = "choosingName";
-            this.choosingName.Size = new System.Drawing.Size(0, 22);
-            this.choosingName.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(-4, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 22);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Search For:";
-            // 
-            // combobox
-            // 
-            this.combobox.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.combobox.FormattingEnabled = true;
-            this.combobox.Location = new System.Drawing.Point(123, 56);
-            this.combobox.Name = "combobox";
-            this.combobox.Size = new System.Drawing.Size(553, 30);
-            this.combobox.TabIndex = 9;
-            this.combobox.Visible = false;
             // 
             // listView
             // 
@@ -115,13 +59,18 @@
             this.columnHeader10});
             this.listView.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView.HideSelection = false;
-            this.listView.Location = new System.Drawing.Point(0, 118);
+            this.listView.Location = new System.Drawing.Point(0, 38);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(800, 330);
-            this.listView.TabIndex = 8;
+            this.listView.Size = new System.Drawing.Size(800, 414);
+            this.listView.TabIndex = 11;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
             this.listView.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView_MouseClick);
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "APPLY";
+            this.columnHeader11.Width = 131;
             // 
             // columnHeader1
             // 
@@ -155,7 +104,7 @@
             // columnHeader7
             // 
             this.columnHeader7.Text = "Age";
-            this.columnHeader7.Width = 71;
+            this.columnHeader7.Width = 38;
             // 
             // columnHeader8
             // 
@@ -171,39 +120,30 @@
             this.columnHeader10.Text = "Tel Number";
             this.columnHeader10.Width = 150;
             // 
-            // searchFor
+            // label1
             // 
-            this.searchFor.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchFor.FormattingEnabled = true;
-            this.searchFor.Location = new System.Drawing.Point(123, 11);
-            this.searchFor.Name = "searchFor";
-            this.searchFor.Size = new System.Drawing.Size(553, 30);
-            this.searchFor.TabIndex = 7;
-            this.searchFor.SelectedIndexChanged += new System.EventHandler(this.searchFor_SelectedIndexChanged);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(287, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(257, 23);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "ALL ANNOUNCEMENTS";
             // 
-            // columnHeader11
-            // 
-            this.columnHeader11.DisplayIndex = 0;
-            this.columnHeader11.Text = "APPLY";
-            // 
-            // Form10
+            // Form14
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox);
-            this.Controls.Add(this.choosingName);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.combobox);
             this.Controls.Add(this.listView);
-            this.Controls.Add(this.searchFor);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "Form10";
+            this.Name = "Form14";
             this.ShowIcon = false;
-            this.Text = "SEARCH";
-            this.Load += new System.EventHandler(this.Form10_Load);
+            this.Text = "ALL ANNOUNCEMENTS";
+            this.Load += new System.EventHandler(this.Form14_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,12 +151,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox;
-        private System.Windows.Forms.Label choosingName;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox combobox;
         private System.Windows.Forms.ListView listView;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
@@ -227,7 +163,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.ColumnHeader columnHeader10;
-        private System.Windows.Forms.ComboBox searchFor;
-        private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.Label label1;
     }
 }

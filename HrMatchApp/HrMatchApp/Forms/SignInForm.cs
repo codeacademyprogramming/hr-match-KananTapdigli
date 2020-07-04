@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace HrMatchApp
 {
-    public partial class Form3 : Form
+    public partial class SignInForm : Form
     {
         HrMatchContext db;
         List<User> users;
 
-        public Form3()
+        public SignInForm()
         {
             InitializeComponent();
         }
@@ -45,13 +45,13 @@ namespace HrMatchApp
 
                 if (activeUser.Status.Equals("Worker"))
                 {
-                    Form4 form4 = new Form4(activeUser);
-                    form4.ShowDialog();
+                    WorkerMenuForm workerMenuForm = new WorkerMenuForm(activeUser);
+                    workerMenuForm.ShowDialog();
                 }
                 else
                 {
-                    Form5 form5 = new Form5(activeUser);
-                    form5.ShowDialog();
+                    EmployerMenuForm employerMenuForm = new EmployerMenuForm(activeUser);
+                    employerMenuForm.ShowDialog();
                 }
 
                 username.Text = string.Empty;

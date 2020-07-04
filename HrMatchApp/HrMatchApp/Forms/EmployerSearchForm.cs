@@ -14,9 +14,9 @@ using System.Windows.Forms;
 
 namespace HrMatchApp
 {
-    public partial class Form9 : Form
+    public partial class EmployerSearchForm : Form
     {
-        public Form9()
+        public EmployerSearchForm()
         {
             InitializeComponent();
         }

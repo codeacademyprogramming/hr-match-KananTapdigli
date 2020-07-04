@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace HrMatchApp
 {
-    public partial class Form5 : Form
+    public partial class EmployerMenuForm : Form
     {
         User activeEmployer;
-        public Form5(User activeEmployer)
+        public EmployerMenuForm(User activeEmployer)
         {
             InitializeComponent();
             this.activeEmployer = activeEmployer;
@@ -28,20 +28,20 @@ namespace HrMatchApp
 
         private void addAnnouncement_Click(object sender, EventArgs e)
         {
-            Form8 form8 = new Form8(activeEmployer);
-            form8.ShowDialog();
+            AddAnnouncementForm addAnnouncementForm = new AddAnnouncementForm(activeEmployer);
+            addAnnouncementForm.ShowDialog();
         }
 
         private void search_Click(object sender, EventArgs e)
         {
-            Form9 form9 = new Form9();
-            form9.ShowDialog();
+            EmployerSearchForm employerSearchForm = new EmployerSearchForm();
+            employerSearchForm.ShowDialog();
         }
 
         private void applies_Click(object sender, EventArgs e)
         {
-            Form15 form15 = new Form15(activeEmployer);
-            form15.ShowDialog();
+            AppliesForm appliesForm = new AppliesForm(activeEmployer);
+            appliesForm.ShowDialog();
         }
 
         private void logOut_Click(object sender, EventArgs e)

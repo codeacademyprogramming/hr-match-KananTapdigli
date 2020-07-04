@@ -14,11 +14,11 @@ using System.Windows.Forms;
 
 namespace HrMatchApp
 {
-    public partial class Form2 : Form
+    public partial class SignUpForm : Form
     {
         List<User> users;
 
-        public Form2()
+        public SignUpForm()
         {
             InitializeComponent();
         }

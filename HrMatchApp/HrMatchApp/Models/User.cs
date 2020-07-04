@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using HrMatchApp.Models;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -53,6 +54,8 @@ namespace HrMatch.Models
 
 
         public ICollection<Announcement> Announcements { get; set; }
+
+        public ICollection<WorkersAnnouncements> workersAnnouncements { get; set; }
 
     }
 }

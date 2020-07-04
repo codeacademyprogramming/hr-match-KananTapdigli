@@ -12,11 +12,11 @@ using System.Windows.Forms;
 
 namespace HrMatchApp.Forms
 {
-    public partial class Form10 : Form
+    public partial class WorkerSearchForm : Form
     {
         User activeWorker;
         CV cv;
-        public Form10(User activeWorker)
+        public WorkerSearchForm(User activeWorker)
         {
             InitializeComponent();
             this.activeWorker = activeWorker;
@@ -336,7 +336,7 @@ namespace HrMatchApp.Forms
                                              .FirstOrDefault(a => a.Name.Equals(name) && a.CompanyName.Equals(companyName) && a.CategoryID.Equals(categoryID) && a.CityID.Equals(cityID) && a.Information.Equals(information) && a.Education.Equals(education) && a.Experience.Equals(experience) && a.Age.Equals(age) && a.Salary.Equals(salary) && a.PhoneNumber.Equals(phoneNumber));
                             }
 
-                            Form11 form11 = new Form11(activeWorker, announcement);
+                            ApplyAnnouncementForm form11 = new ApplyAnnouncementForm(activeWorker, announcement);
                             form11.ShowDialog();
                         }
                     }

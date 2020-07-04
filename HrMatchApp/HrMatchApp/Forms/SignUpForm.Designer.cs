@@ -1,6 +1,6 @@
 ﻿namespace HrMatchApp
 {
-    partial class Form2
+    partial class SignUpForm
     {
         /// <summary>
         /// Required designer variable.

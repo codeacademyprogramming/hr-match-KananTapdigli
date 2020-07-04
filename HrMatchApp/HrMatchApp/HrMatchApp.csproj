@@ -56,97 +56,97 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Form10.cs">
+    <Compile Include="Forms\WorkerSearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form10.Designer.cs">
-      <DependentUpon>Form10.cs</DependentUpon>
+    <Compile Include="Forms\WorkerSearchForm.Designer.cs">
+      <DependentUpon>WorkerSearchForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form11.cs">
+    <Compile Include="Forms\ApplyAnnouncementForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form11.Designer.cs">
-      <DependentUpon>Form11.cs</DependentUpon>
+    <Compile Include="Forms\ApplyAnnouncementForm.Designer.cs">
+      <DependentUpon>ApplyAnnouncementForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form12.cs">
+    <Compile Include="Forms\SuitableAnnouncementsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form12.Designer.cs">
-      <DependentUpon>Form12.cs</DependentUpon>
+    <Compile Include="Forms\SuitableAnnouncementsForm.Designer.cs">
+      <DependentUpon>SuitableAnnouncementsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form13.cs">
+    <Compile Include="Forms\AppliedAnnouncements.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form13.Designer.cs">
-      <DependentUpon>Form13.cs</DependentUpon>
+    <Compile Include="Forms\AppliedAnnouncements.Designer.cs">
+      <DependentUpon>AppliedAnnouncements.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form14.cs">
+    <Compile Include="Forms\AllAnnouncements.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form14.Designer.cs">
-      <DependentUpon>Form14.cs</DependentUpon>
+    <Compile Include="Forms\AllAnnouncements.Designer.cs">
+      <DependentUpon>AllAnnouncements.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form15.cs">
+    <Compile Include="Forms\AppliesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form15.Designer.cs">
-      <DependentUpon>Form15.cs</DependentUpon>
+    <Compile Include="Forms\AppliesForm.Designer.cs">
+      <DependentUpon>AppliesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form2.cs">
+    <Compile Include="Forms\SignUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Forms\SignUpForm.Designer.cs">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form3.cs">
+    <Compile Include="Forms\SignInForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Forms\SignInForm.Designer.cs">
+      <DependentUpon>SignInForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form4.cs">
+    <Compile Include="Forms\WorkerMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="Forms\WorkerMenuForm.Designer.cs">
+      <DependentUpon>WorkerMenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form5.cs">
+    <Compile Include="Forms\EmployerMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="Forms\EmployerMenuForm.Designer.cs">
+      <DependentUpon>EmployerMenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form6.cs">
+    <Compile Include="Forms\AddCVForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="Forms\AddCVForm.Designer.cs">
+      <DependentUpon>AddCVForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form7.cs">
+    <Compile Include="Forms\CVInformationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <Compile Include="Forms\CVInformationForm.Designer.cs">
+      <DependentUpon>CVInformationForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form8.cs">
+    <Compile Include="Forms\AddAnnouncementForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form8.Designer.cs">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <Compile Include="Forms\AddAnnouncementForm.Designer.cs">
+      <DependentUpon>AddAnnouncementForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form9.cs">
+    <Compile Include="Forms\EmployerSearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form9.Designer.cs">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <Compile Include="Forms\EmployerSearchForm.Designer.cs">
+      <DependentUpon>EmployerSearchForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\City.cs" />
     <Compile Include="DbContext\HrMatchContext.cs" />
-    <Compile Include="Forms\Form1.cs">
+    <Compile Include="Forms\EntryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\EntryForm.Designer.cs">
+      <DependentUpon>EntryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Announcement.cs" />
     <Compile Include="Models\Category.cs" />
@@ -155,50 +155,50 @@
     <Compile Include="Models\WorkersAnnouncements.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\EntryForm.resx">
+      <DependentUpon>EntryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form10.resx">
-      <DependentUpon>Form10.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\WorkerSearchForm.resx">
+      <DependentUpon>WorkerSearchForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form11.resx">
-      <DependentUpon>Form11.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ApplyAnnouncementForm.resx">
+      <DependentUpon>ApplyAnnouncementForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form12.resx">
-      <DependentUpon>Form12.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\SuitableAnnouncementsForm.resx">
+      <DependentUpon>SuitableAnnouncementsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form13.resx">
-      <DependentUpon>Form13.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AppliedAnnouncements.resx">
+      <DependentUpon>AppliedAnnouncements.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form14.resx">
-      <DependentUpon>Form14.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AllAnnouncements.resx">
+      <DependentUpon>AllAnnouncements.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form15.resx">
-      <DependentUpon>Form15.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AppliesForm.resx">
+      <DependentUpon>AppliesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\SignInForm.resx">
+      <DependentUpon>SignInForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\WorkerMenuForm.resx">
+      <DependentUpon>WorkerMenuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\EmployerMenuForm.resx">
+      <DependentUpon>EmployerMenuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AddCVForm.resx">
+      <DependentUpon>AddCVForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\CVInformationForm.resx">
+      <DependentUpon>CVInformationForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form8.resx">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AddAnnouncementForm.resx">
+      <DependentUpon>AddAnnouncementForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form9.resx">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\EmployerSearchForm.resx">
+      <DependentUpon>EmployerSearchForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

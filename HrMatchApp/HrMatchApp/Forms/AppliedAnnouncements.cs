@@ -13,10 +13,10 @@ using System.Windows.Forms;
 
 namespace HrMatchApp.Forms
 {
-    public partial class Form13 : Form
+    public partial class AppliedAnnouncementsForm : Form
     {
         User activeWorker;
-        public Form13(User activeWorker)
+        public AppliedAnnouncementsForm(User activeWorker)
         {
             InitializeComponent();
 

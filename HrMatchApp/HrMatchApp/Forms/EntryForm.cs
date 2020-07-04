@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace HrMatchApp
 {
-    public partial class Form1 : Form
+    public partial class EntryForm : Form
     {
-        public Form1()
+        public EntryForm()
         {
             InitializeComponent();
 
@@ -59,14 +59,14 @@ namespace HrMatchApp
 
         private void SignUp_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.ShowDialog();
+            SignUpForm signUp = new SignUpForm();
+            signUp.ShowDialog();
         }
 
         private void SignIn_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
-            form3.ShowDialog();
+            SignInForm signIn = new SignInForm();
+            signIn.ShowDialog();
         }
     }
 }

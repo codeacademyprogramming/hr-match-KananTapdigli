@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace HrMatchApp
 {
-    public partial class Form7 : Form
+    public partial class CVInformationForm : Form
     {
         User activeWorker;
-        public Form7(User activeWorker)
+        public CVInformationForm(User activeWorker)
         {
             InitializeComponent();
             this.activeWorker = activeWorker;

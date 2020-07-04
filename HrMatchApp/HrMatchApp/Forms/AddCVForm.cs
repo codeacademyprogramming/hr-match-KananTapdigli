@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace HrMatchApp
 {
-    public partial class Form6 : Form
+    public partial class AddCVForm : Form
     {
         User activeWorker;
 
@@ -26,7 +26,7 @@ namespace HrMatchApp
 
         bool hasCV = false;
 
-        public Form6(User activeWorker)
+        public AddCVForm(User activeWorker)
         {
             InitializeComponent();
             this.activeWorker = activeWorker;

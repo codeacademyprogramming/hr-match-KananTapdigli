@@ -1,6 +1,6 @@
 ﻿namespace HrMatchApp
 {
-    partial class Form4
+    partial class WorkerMenuForm
     {
         /// <summary>
         /// Required designer variable.

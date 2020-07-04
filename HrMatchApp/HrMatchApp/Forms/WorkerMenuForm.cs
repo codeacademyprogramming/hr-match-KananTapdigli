@@ -14,10 +14,10 @@ using System.Windows.Forms;
 
 namespace HrMatchApp
 {
-    public partial class Form4 : Form
+    public partial class WorkerMenuForm : Form
     {
         User activeWorker;
-        public Form4(User activeWorker)
+        public WorkerMenuForm(User activeWorker)
         {
             InitializeComponent();
             this.activeWorker = activeWorker;
@@ -32,8 +32,8 @@ namespace HrMatchApp
 
         private void addCV_Click(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6(activeWorker);
-            form6.ShowDialog();
+            AddCVForm addCVForm = new AddCVForm(activeWorker);
+            addCVForm.ShowDialog();
         }
 
         private void information_Click(object sender, EventArgs e)
@@ -44,8 +44,8 @@ namespace HrMatchApp
 
                 if (cv != null)
                 {
-                    Form7 form7 = new Form7(activeWorker);
-                    form7.ShowDialog();
+                    CVInformationForm cVInformationForm = new CVInformationForm(activeWorker);
+                    cVInformationForm.ShowDialog();
                 }
                 else
                 {
@@ -56,8 +56,8 @@ namespace HrMatchApp
 
         private void search_Click(object sender, EventArgs e)
         {
-            Form10 form10 = new Form10(activeWorker);
-            form10.ShowDialog();
+            WorkerSearchForm workerSearchForm = new WorkerSearchForm(activeWorker);
+            workerSearchForm.ShowDialog();
         }
 
         private void suitableAnnouncements_Click(object sender, EventArgs e)
@@ -77,8 +77,8 @@ namespace HrMatchApp
 
                     if (query.Any(a => a.CategoryID == activeCV.CategoryID || a.Education == activeCV.Education || a.Experience == activeCV.Experience || a.Age >= activeCV.Age || a.City == activeCV.City || a.Salary >= activeCV.Salary))
                     {
-                        Form12 form12 = new Form12(activeWorker);
-                        form12.ShowDialog();
+                        SuitableAnnouncementsForm suitableAnnouncementsForm = new SuitableAnnouncementsForm(activeWorker);
+                        suitableAnnouncementsForm.ShowDialog();
                     }
                     else
                     {
@@ -102,8 +102,8 @@ namespace HrMatchApp
 
                 if (query.Any(x => x.WorkerID == activeWorker.ID))
                 {
-                    Form13 form13 = new Form13(activeWorker);
-                    form13.ShowDialog();
+                    AppliedAnnouncementsForm appliedAnnouncementsForm = new AppliedAnnouncementsForm(activeWorker);
+                    appliedAnnouncementsForm.ShowDialog();
                 }
                 else
                 {
@@ -114,8 +114,8 @@ namespace HrMatchApp
 
         private void allAnnouncements_Click(object sender, EventArgs e)
         {
-            Form14 form14 = new Form14(activeWorker);
-            form14.ShowDialog();
+            AllAnnouncements allAnnouncements = new AllAnnouncements(activeWorker);
+            allAnnouncements.ShowDialog();
         }
 
         private void logOut_Click(object sender, EventArgs e)

@@ -14,10 +14,10 @@ using System.Windows.Forms;
 
 namespace HrMatchApp
 {
-    public partial class Form8 : Form
+    public partial class AddAnnouncementForm : Form
     {
         User activeEmployer;
-        public Form8(User activeEmployer)
+        public AddAnnouncementForm(User activeEmployer)
         {
             InitializeComponent();
             this.activeEmployer = activeEmployer;

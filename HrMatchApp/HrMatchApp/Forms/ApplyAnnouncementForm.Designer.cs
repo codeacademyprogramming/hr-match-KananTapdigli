@@ -1,6 +1,6 @@
 ﻿namespace HrMatchApp.Forms
 {
-    partial class Form11
+    partial class ApplyAnnouncementForm
     {
         /// <summary>
         /// Required designer variable.

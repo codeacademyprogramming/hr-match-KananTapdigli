@@ -1,6 +1,6 @@
 ﻿namespace HrMatchApp
 {
-    partial class Form6
+    partial class AddCVForm
     {
         /// <summary>
         /// Required designer variable.
