@@ -72,17 +72,19 @@ namespace HrMatchApp
                     {
                         categoryID = db.Categories.FirstOrDefault(c => c.Name.Equals(category.Text)).ID;
                         cityID = db.Cities.FirstOrDefault(c => c.Name.Equals(city.Text)).ID;
+                     
+                        CV activeCV = db.CVs.FirstOrDefault(c => c.UserID.Equals(UserCV.UserID));
 
-                        db.CVs.FirstOrDefault(c => c.UserID.Equals(UserCV.UserID)).CategoryID = categoryID;
-                        db.CVs.FirstOrDefault(c => c.UserID.Equals(UserCV.UserID)).CityID = cityID;
-                        db.CVs.FirstOrDefault(c => c.UserID.Equals(UserCV.UserID)).Name = name.Text;
-                        db.CVs.FirstOrDefault(c => c.UserID.Equals(UserCV.UserID)).Surname = surname.Text;
-                        db.CVs.FirstOrDefault(c => c.UserID.Equals(UserCV.UserID)).Gender = gender.Text;
-                        db.CVs.FirstOrDefault(c => c.UserID.Equals(UserCV.UserID)).Age = Age;
-                        db.CVs.FirstOrDefault(c => c.UserID.Equals(UserCV.UserID)).Education = education.Text;
-                        db.CVs.FirstOrDefault(c => c.UserID.Equals(UserCV.UserID)).Experience = experience.Text;
-                        db.CVs.FirstOrDefault(c => c.UserID.Equals(UserCV.UserID)).Salary = Salary;
-                        db.CVs.FirstOrDefault(c => c.UserID.Equals(UserCV.UserID)).PhoneNumber = phoneNumber.Text;
+                        activeCV.CategoryID = categoryID;
+                        activeCV.CityID = cityID;
+                        activeCV.Name = name.Text;
+                        activeCV.Surname = surname.Text;
+                        activeCV.Gender = gender.Text;
+                        activeCV.Age = Age;
+                        activeCV.Education = education.Text;
+                        activeCV.Experience = experience.Text;
+                        activeCV.Salary = Salary;
+                        activeCV.PhoneNumber = phoneNumber.Text;
 
                         MessageBox.Show("CV is Successfully Updated!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
