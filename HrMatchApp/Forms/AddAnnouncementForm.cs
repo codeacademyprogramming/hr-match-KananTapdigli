@@ -95,37 +95,37 @@ namespace HrMatchApp
 
             using (HrMatchContext db = new HrMatchContext())
             {
-                if (db.Categories.Any(c => c.Name == category.Text) == false)
+                if (!db.Categories.Any(c => c.Name == category.Text))
                 {
                     MessageBox.Show("'Category' field has not chosen correctly!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
-                else if (db.Cities.Any(c => c.Name == city.Text) == false)
+                else if (!db.Cities.Any(c => c.Name == city.Text))
                 {
                     MessageBox.Show("'City' field has not chosen correctly!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
-                else if (Byte.TryParse(age.Text, out byte Age) == false)
+                else if (!Byte.TryParse(age.Text, out byte Age))
                 {
                     MessageBox.Show("'Age' field is not valid format! It must be a number!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
-                else if (education.Items.Contains(education.Text) == false)
+                else if (!education.Items.Contains(education.Text))
                 {
                     MessageBox.Show("'Education' field has not chosen correctly!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
-                else if (experience.Items.Contains(experience.Text) == false)
+                else if (!experience.Items.Contains(experience.Text))
                 {
                     MessageBox.Show("'Experience' field has not chosen correctly!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
-                else if (Decimal.TryParse(salary.Text, out decimal Salary) == false)
+                else if (!Decimal.TryParse(salary.Text, out decimal Salary))
                 {
                     MessageBox.Show("Salary field is not valid format! It must be a number!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
-                else if (isValidPhoneNumber(phoneNumber.Text) == false)
+                else if (!isValidPhoneNumber(phoneNumber.Text))
                 {
                     MessageBox.Show("'Phone Number' field has not written correctly! Example: +994-55-555-55-55", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
